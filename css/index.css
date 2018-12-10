@@ -48,11 +48,11 @@ body {
 }
 
 #mvLogo {
-    width: 25%;
+    width: 15%;
     height: 100px;
     position: absolute;
     top: 2%;
-    left: 35%;
+    left: 42%;
     z-index: 1;
     border-radius: 3%;
 }
@@ -75,7 +75,7 @@ body {
     z-index: 1;
     border: 2px solid #fff;
     border-radius: 3%;
-    background-color: #c8c8c8;
+    background-color: #fff;
 }
 
 .smIcons {
@@ -108,5 +108,8 @@ body {
 }
 
 #navButton {
-    background-color: #c8c8c8
+    background-color: #fff;
+}
+#navButton i {
+    color: #000000;
 }
