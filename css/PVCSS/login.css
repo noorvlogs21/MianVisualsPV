@@ -8,10 +8,11 @@ Assigned to:    Noor Uddin (NU)
 Primary use:    'Login Page Style'
 -------------------------------------------------------------------*/
 .loginBG {
-    background: url(/img/loginImg/loginBG.jpg);
+    background: url(/img/loginImg/loginBG2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
-    background-position: center center;
+    background-position: left;
     border-radius: 1%;
 }
 
@@ -51,4 +52,7 @@ Primary use:    'Login Page Style'
 
 #agreeText {
     color: #fff;
+}
+.whyReg {
+   color: #fff;
 }
