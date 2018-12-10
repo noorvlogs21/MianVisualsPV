@@ -6,4 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
       hoverEnabled: false
     });
   });
-        
+ 
+ // INDEX BUTTON CONTROL
+ $('#mvLogo').click(function() {
+  changeScreen('homepage');
+}); 
+
+ $('.login').click(function() {
+  changeScreen('login');
+}); 

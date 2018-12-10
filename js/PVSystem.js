@@ -13,6 +13,10 @@ function changeScreen(mainScreen) {
             $(".container").empty(); // empty current screen
             getPartialView(mainScreen); // load new screen
             break;
+            case 'login': // login PV
+            $(".container").empty();
+            getPartialView(mainScreen);
+            break;
 
 
     } //close switch

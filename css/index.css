@@ -55,6 +55,7 @@ body {
     left: 42%;
     z-index: 1;
     border-radius: 3%;
+    cursor: pointer;
 }
 
 #smLinks::before {
@@ -110,6 +111,7 @@ body {
 #navButton {
     background-color: #fff;
 }
+
 #navButton i {
     color: #000000;
 }

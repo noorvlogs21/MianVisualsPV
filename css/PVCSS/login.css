@@ -1,0 +1,29 @@
+.cardSize {
+    width: 80%;
+    margin: auto;
+    background-color: #c8c8c8;
+    margin-top: 3%;
+}
+#loginSection, #regSection {
+    margin-top: auto;
+    margin-top: 3%;
+}
+
+#loginBut, #regBut {
+    background-color: #fff;
+    color: #000000;
+}
+
+#regTT {
+    background-color: #fff;
+    color: #000;
+}
+
+#loginForm, #regForm {
+    color: #000;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #000;
+}
