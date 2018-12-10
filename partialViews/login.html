@@ -1,46 +1,58 @@
 <link rel="stylesheet" href="/css/PVCSS/login.css">
 
-<div class="center">
+<div class="loginBG">
+    <div class="center">
+        <div class="col l12">
+            <div class="card large cardSize">
+                <div class="card-content white-text">
 
-    <div class="col l12">
-        <div class="card large cardSize">
-            <div class="card-content white-text">
+                    <div class="" id="loginSection">
+                        <div class="row">
+                            <input class="userInput" style="display:inline;width:auto;" type="text" id="loginemail"
+                                name="email" placeholder="Email" />
+                        </div>
+                        <div class="row">
+                            <input class="userInput" style="display:inline;width:auto;" type="password" id="loginpassword"
+                                name="password" placeholder="Password" />
+                        </div>
 
-                <div class="" id="loginSection">
-                    <div class="row">
-                        <input class="userInput" style="display:inline;width:auto;" type="text" id="loginemail" name="email"
-                            placeholder="Email" />
+                        <button class="mwaves-effect waves-light btn" id="loginBut" name="signin">Login<i class="material-icons right">send</i></button>
                     </div>
-                    <div class="row">
-                        <input class="userInput" style="display:inline;width:auto;" type="password" id="loginpassword"
-                            name="password" placeholder="Password" />
+
+                    <div id="regSection">
+                        <div class="row">
+                            <input class="userInput" style="display:inline;width:auto;" type="text" id="registeremail"
+                                name="email" placeholder="Email" />
+                        </div>
+                        <div class="row">
+                            <input class="userInput" style="display:inline;width:auto;" type="password" id="registerpassword"
+                                name="password" placeholder="Password" />
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input type="checkbox" class="filled-in" id="agreement" onchange="document.getElementById('regBut').disabled = !this.checked;" />
+                                <span id="agreeText">Agree to <a href="/files/tandc.txt" target="_blank">T&C</a> and <a
+                                        href="/files/pandp.txt" target="_blank">PP</a></span>
+                            </label>
+                        </div>
+                        <button disabled class="waves-effect waves-light btn" id="regBut" name="signup">Register<i
+                                class="material-icons right">send</i></button>
+                        <a class="btn tooltipped" id="regTT" data-position="bottom" data-tooltip="Enter an Email and Password to create an Account!<br>(Make sure you remember the details!)"><i
+                                class="material-icons">create</i></a>
+                        <h3>Why Register?</h3>
+                        <p>By creating a MianMedia Account,<br>
+                            You too can show off your work for everyone to see!</p>
                     </div>
 
-                    <button class="mwaves-effect waves-light btn" id="loginBut" name="signin">Login<i class="material-icons right">send</i></button>
+
                 </div>
-
-                <div id="regSection">
-                    <div class="row">
-                        <input class="userInput" style="display:inline;width:auto;" type="text" id="registeremail" name="email"
-                            placeholder="Email" />
-                    </div>
-                    <div class="row">
-                        <input class="userInput" style="display:inline;width:auto;" type="password" id="registerpassword"
-                            name="password" placeholder="Password" />
-                    </div>
-                    <button class="waves-effect waves-light btn" id="regBut" name="signup">Register<i class="material-icons right">send</i></button>
-                    <a class="btn tooltipped" id="regTT" data-position="bottom" data-tooltip="Enter an Email and Password to create an Account!<br>(Make sure you remember the details!)"><i
-                            class="material-icons">create</i></a>
+                <div class="card-action">
+                    <a id="loginForm">Login</a>
+                    <a id="regForm">Register</a>
                 </div>
-
-            </div>
-            <div class="card-action">
-                <a id="loginForm">Login</a>
-                <a id="regForm">Register</a>
             </div>
         </div>
     </div>
-
 </div>
 
 <script src="/js/PVJS/login.js"></script>

@@ -1,15 +1,35 @@
+/*------------------------------------------------------------------
+[NU Master Stylesheet]
+
+Project:    'Mian Media'
+Version:    1.0
+Last change:    'changed color of links to match black and white theme'
+Assigned to:    Noor Uddin (NU)
+Primary use:    'Login Page Style'
+-------------------------------------------------------------------*/
+.loginBG {
+    background: url(/img/loginImg/loginBG.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center center;
+    border-radius: 1%;
+}
+
 .cardSize {
+    background-color: transparent;
     width: 80%;
     margin: auto;
-    background-color: #c8c8c8;
-    margin-top: 3%;
+
 }
-#loginSection, #regSection {
+
+#loginSection,
+#regSection {
     margin-top: auto;
     margin-top: 3%;
 }
 
-#loginBut, #regBut {
+#loginBut,
+#regBut {
     background-color: #fff;
     color: #000000;
 }
@@ -19,11 +39,16 @@
     color: #000;
 }
 
-#loginForm, #regForm {
+#loginForm,
+#regForm {
     color: #000;
     cursor: pointer;
 }
 
 ::placeholder {
     color: #000;
+}
+
+#agreeText {
+    color: #fff;
 }
