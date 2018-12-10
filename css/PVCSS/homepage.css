@@ -1,0 +1,48 @@
+
+.service {
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: purple;
+}
+
+#serviceMedia {
+    border-right: 2px solid #fff;
+    background-image: url(/img/homepageIMG/mediaBG.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 95% 95%;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    opacity: 0.5;
+}
+
+#serviceMedia:hover {
+    opacity: 0.8;
+    background-size: 100% 100%;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+}
+
+#serviceWD {
+    border-left: 2px solid #fff;
+    background-image: url(/img/homepageIMG/WDBG.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    background-size: 95% 95%;
+    opacity: 0.5;
+}
+
+#serviceWD:hover {
+    opacity: 0.8;
+    background-size: 100% 100%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+}
+
+.serviceTitle {
+    text-align: center;
+    margin-top: 40%;
+}
