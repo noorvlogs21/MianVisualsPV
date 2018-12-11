@@ -7,11 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
  
+// hide log out button on load
+  $('#logoutBut').hide();
+
  // INDEX BUTTON CONTROL
  $('#mvLogo').click(function() {
   changeScreen('homepage');
+  console.log('homepage Loaded Successfully');
 }); 
-
  $('.login').click(function() {
   changeScreen('login');
+  console.log('login Loaded Successfully');
 }); 

@@ -98,10 +98,17 @@ body {
     background-size: contain;
 }
 
-#navButton {
+#loginnavButton, #navButton {
     background-color: #fff;
 }
 
-#navButton i {
+#loginnavButton, #navButton i {
     color: #000000;
+}
+
+#logoutNavButton {
+    background-color: #000000;
+}
+#logoutNavButton i {
+    color: #fff;
 }

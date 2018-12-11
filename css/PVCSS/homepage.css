@@ -11,17 +11,18 @@
     background-image: url(/img/homepageIMG/mediaBG.jpg);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 95% 95%;
+    background-size: cover;
     border-top-left-radius: 1%;
     border-bottom-left-radius: 1%;
     opacity: 0.5;
+    transition: opacity .4s ease-in;
+    -moz-transition: opacity .4s ease-in;
+    -webkit-transition: opacity .4s ease-in;
+    -o-transition: opacity .4s ease-in;
 }
 
 #serviceMedia:hover {
     opacity: 0.8;
-    background-size: 100% 100%;
-    border-top-left-radius: 1%;
-    border-bottom-left-radius: 1%;
 }
 
 #serviceWD {
@@ -29,17 +30,18 @@
     background-image: url(/img/homepageIMG/WDBG.jpg);
     background-position: left;
     background-repeat: no-repeat;
-    border-top-left-radius: 1%;
-    border-bottom-left-radius: 1%;
-    background-size: 95% 95%;
+    background-size: cover;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
     opacity: 0.5;
+    transition: opacity .4s ease-in;
+    -moz-transition: opacity .4s ease-in;
+    -webkit-transition: opacity .4s ease-in;
+    -o-transition: opacity .4s ease-in;
 }
 
 #serviceWD:hover {
     opacity: 0.8;
-    background-size: 100% 100%;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
 }
 
 .serviceTitle {
