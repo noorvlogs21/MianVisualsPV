@@ -78,21 +78,21 @@ body {
 }
 
 #FB {
-    background-image: url(../img/indexImg/fb.svg);
+    background-image: url(/img/indexImg/fb.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 #Insta {
-    background-image: url(../img/indexImg/insta.svg);
+    background-image: url(/img/indexImg/insta.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 #Email {
-    background-image: url(../img/indexImg/email.svg);
+    background-image: url(/img/indexImg/email.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -102,13 +102,13 @@ body {
     background-color: #fff;
 }
 
-#loginnavButton, #navButton i {
+#loginnavButton i, #navButton i {
     color: #000000;
 }
 
-#logoutNavButton {
+#logoutBut {
     background-color: #000000;
 }
-#logoutNavButton i {
+#logoutBut i {
     color: #fff;
 }

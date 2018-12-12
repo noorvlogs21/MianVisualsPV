@@ -1,15 +1,5 @@
  (function () {
-     // Initialize Firebase
-     var config = {
-         apiKey: "AIzaSyDRFXt1mlKIHU393KCOC0jraPx2toS2QZQ",
-         authDomain: "mianmedia-ca668.firebaseapp.com",
-         databaseURL: "https://mianmedia-ca668.firebaseio.com",
-         projectId: "mianmedia-ca668",
-         storageBucket: "",
-         messagingSenderId: "824095606003"
-     };
-     firebase.initializeApp(config);
-
+    // getting the DOM elements
      const loginemail = document.getElementById('loginemail');
      const loginpassword = document.getElementById('loginpassword');
      const registeremail = document.getElementById('registeremail');
@@ -18,7 +8,7 @@
      const regBut = document.getElementById('regBut');
      const logoutBut = document.getElementById('logoutBut');
 
-     // log in meathod
+     // log in method
      loginBut.addEventListener('click', e => {
          // Get user details
          const email = loginemail.value;
@@ -26,10 +16,10 @@
          const auth = firebase.auth();
          // Sign user in
          const promise = auth.signInWithEmailAndPassword(email, password);
-         promise.catch(e => console.log(e.message));
+         promise.catch(e => alert(e.message));
      });
 
-     // Register meathod
+     // Register method
      regBut.addEventListener('click', e => {
          // Get user details
          const email = registeremail.value;
@@ -37,31 +27,29 @@
          const auth = firebase.auth();
          // Sign user up
          const promise = auth.createUserWithEmailAndPassword(email, password);
-         promise.catch(e => console.log(e.message));
+         promise.catch(e => alert(e.message));
      });
 
-     // Log out meathod 
+     // Log out method 
      logoutBut.addEventListener('click', e => {
          firebase.auth().signOut();
-         changeScreen('homepage');
-         $('#loginnavButton').show();
          $('#logoutBut').hide();
+         $('#loginnavButton').show();
+         changeScreen('homepage');
      });
-
 
      // Auth Change State
      firebase.auth().onAuthStateChanged(firebaseUser => {
          if (firebaseUser) {
              // Signed in
-             console.log(firebaseUser + " has signed in successfully")
-             changeScreen('homepage');
+             console.log(firebaseUser + " has signed in successfully");
              $('#loginnavButton').hide();
              $('#logoutBut').show();
+             changeScreen('homepage');
          } else {
              // Signed Out
              console.log('User is not logged in');
          }
      });
-
 
  }());

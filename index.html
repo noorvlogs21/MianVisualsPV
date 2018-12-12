@@ -13,12 +13,15 @@
 
     <link rel="icon" href="/img/indexImg/MVlogo.jpg">
     <title>Mian Media</title>
-    
+
+    <!--FireBase Services-->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="/css/materialize/materialize.min.css">
+    <link rel="stylesheet" href="/css/animateCSS/animate.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet" />
+    <link href="/css/PVCSS/index.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -50,22 +53,20 @@
             <i class="large material-icons">menu</i>
         </a>
         <ul>
-            <li><a class="btn-floating" id="navButton"><i class="material-icons">call</i></a></li>
-            <li><a class="btn-floating" id="navButton"><i class="material-icons">info</i></a></li>
-            <li ><a class="btn-floating" id="logoutBut"><i class="material-icons">vpn_key</i></a></li>
-            <li><a class="btn-floating login" id="loginnavButton"><i class="material-icons">vpn_key</i></a></li>
+            <li><a class="btn-floating navButton" id="navButton"><i class="material-icons">call</i></a></li>
+            <li><a class="btn-floating navButton" id="navButton"><i class="material-icons">info</i></a></li>
+            <li><a class="btn-floating navButton" id="logoutBut"><i class="material-icons">vpn_key</i></a></li>
+            <li><a class="btn-floating login navButton" id="loginnavButton"><i class="material-icons">vpn_key</i></a></li>
         </ul>
     </div>
 
 
-    <!--FireBase Services-->
-    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="/js/fbinit.js"></script>
     <script src="/js/jQuery3.3.1.js"></script>
     <script src="/js/materialize/materialize.min.js"></script>
     <script src="/js/PVSystem.js"></script>
     <script src="/js/init.js"></script>
     <script src="/js/PVJS/index.js"></script>
-
 </body>
 
 </html>
